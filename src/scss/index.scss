@@ -1,0 +1,139 @@
+// header
+
+.header {
+    background-color: #0f1035;
+    // .header__start
+
+    &__start {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px 16px;
+    }
+
+    // .header__list
+
+    &__list {
+        a + a {
+            margin-left: 20px;
+        }
+    }
+
+    // .header__list-link
+
+    &__list-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        color: #ffffff;
+        position: relative;
+        transition: 0.4s ease-out;
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            content: "";
+            transition: 0.4s ease-out;
+        }
+        &:hover {
+            color: #fff;
+            transition: 0.4s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
+    }
+
+    //header__login
+
+    &__login {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        color: #ffffff;
+        position: relative;
+        transition: 0.4s ease-out;
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            content: "";
+            transition: 0.4s ease-out;
+        }
+        &:hover {
+            color: #fff;
+            transition: 0.4s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
+    }
+
+    // .header__bottom
+
+    &__bottom {
+        background-color: #fff;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    // .header__end
+
+    &__end {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__logo
+
+    &__logo {
+        
+    }
+
+    // .header__menu
+
+    &__menu {
+        margin-right: 132px;
+        a + a {
+            margin-left: 30px;
+        }
+    }
+
+    // .header__menu-link
+
+    &__menu-link {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 138%;
+        color: #000000;
+        position: relative;
+        transition: 0.4s ease-out;
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            content: "";
+            transition: 0.4s ease-out;
+        }
+        &:hover {
+            color: #000;
+            transition: 0.4s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
+    }
+}
