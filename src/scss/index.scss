@@ -158,13 +158,13 @@
             transition: 0.5s;
             display: inline-flex;
             align-items: center;
-            img{
+            img {
                 width: 13px;
                 margin-left: 7px;
-                transition: .5s;
+                transition: 0.5s;
             }
             &:hover {
-                img{
+                img {
                     transform: rotate(180deg);
                 }
             }
@@ -252,6 +252,111 @@
         cursor: pointer;
         transition: 0.5s;
         &:hover {
+            color: #000;
+            background: transparent;
+            border: 1px solid #000;
+        }
+    }
+}
+
+// info
+
+.info {
+    padding: 92px 0px 110px;
+    // .info__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        max-width: 442px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 53px;
+    }
+
+    // .info__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 145%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 81px;
+    }
+
+    // .info__box
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    // .info__item
+
+    &__item {
+        max-width: 435px;
+    }
+
+    // .info__item-img
+
+    &__item-img {
+        max-width: 90px;
+        margin: 0 auto;
+        margin-bottom: 31px;
+        transition: .5s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+
+    // .info__item-title
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 109%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    // .info__item-text
+
+    &__item-text {
+        max-width: 241px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        color: #000000;
+        margin: 0 auto;
+    }
+
+    // .info__btn
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__btn {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+        color: #ffffff;
+        padding: 15px 24px 17px;
+        background: #190083;
+        border-radius: 3px;
+        border: 1px solid #190083;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
             color: #000;
             background: transparent;
             border: 1px solid #000;
