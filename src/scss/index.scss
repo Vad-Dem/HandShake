@@ -461,7 +461,6 @@
         justify-content: left;
         max-width: 447px;
         width: 100%;
-        
     }
 
     // .students__text
@@ -483,5 +482,134 @@
     &__img {
         max-width: 323px;
         margin-bottom: 70px;
+    }
+}
+
+// download
+
+.download {
+    background-color: #ebeef3;
+    padding-top: 58px;
+
+    & .container {
+        background-image: url(../img/download-bg.png);
+        background-position: 400px 295px;
+        background-repeat: no-repeat;
+        padding-bottom: 187px;
+    }
+
+    // .download__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 35px;
+    }
+
+    // .download__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 145%;
+        text-align: center;
+        color: #000000;
+        margin: 0 auto;
+        margin-bottom: 138px;
+        max-width: 552px;
+    }
+
+    // download__link
+
+    &__link {
+        border: 3px solid transparent;
+        border-radius: 8px;
+        transition: 0.5s;
+        &:hover {
+            border: 3px solid #000;
+        }
+        & + & {
+            margin-left: 40px;
+        }
+    }
+
+    // .download__box
+
+    &__box {
+    }
+}
+
+// recruit
+
+.recruit {
+    background-color: #0f1035;
+    padding: 112px 0px 110px;
+    // .recruit__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #ffffff;
+        max-width: 424px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    // .recruit__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 145%;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 40px;
+    }
+
+    // .recruit__box
+
+    &__box {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .recruit__form
+
+    &__form {
+        background: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 3px;
+        max-width: 340px;
+        width: 100%;
+        padding: 13px 0px 13px 21px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            color: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    // .recruit__btn
+
+    &__btn {
+        margin-left: 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+        color: #ffffff;
+        padding: 12px 26px 14px 27px;
+        background-color: #ff1100;
+        border: 1px solid #ff1100;
+        border-radius: 3px;
+        cursor: pointer;
     }
 }
