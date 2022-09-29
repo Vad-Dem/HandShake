@@ -426,22 +426,99 @@
         font-size: 18px;
         line-height: 156%;
         color: #000000;
-        span{
+        span {
             font-weight: 700;
         }
     }
 }
 
-.experiense__bullet .swiper-pagination-bullet{
+.experiense__bullet .swiper-pagination-bullet {
     width: 13px;
     height: 13px;
     background-color: transparent;
     border: 2px solid #000;
     opacity: 1;
 }
-.experiense__bullet .swiper-pagination-bullet-active{
+.experiense__bullet .swiper-pagination-bullet-active {
     background-color: #000;
     border: 2px solid #000;
+}
+
+// company
+
+.company {
+    background-color: #f6f6f8;
+    padding: 111px 0px;
+    // .company__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        max-width: 744px;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+
+    // .company__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 145%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 100px;
+    }
+
+    // .company__item
+
+    &__item {
+        max-width: 190px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    // .company__item-title
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 165%;
+        color: #000000;
+    }
+
+    // .company__item-img
+
+    &__item-img {
+    }
+
+    // .company__btn
+
+    &__btn {
+        display: block;
+        margin: 95px auto 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 125%;
+        color: #ffffff;
+        padding: 15px 24px 17px;
+        background-color: #190083;
+        border-radius: 3px;
+        border: 1px solid #190083;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            background-color: transparent;
+            color: #000;
+            border: 1px solid #000;
+        }
+    }
 }
 
 // learn
