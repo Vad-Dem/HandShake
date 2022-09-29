@@ -364,6 +364,86 @@
     }
 }
 
+// experiense
+
+.experiense {
+    background-image: url(../img/experiense-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 111px 0px;
+    // .experiense__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        max-width: 345px;
+        margin: 0 auto;
+        margin-bottom: 279px;
+    }
+
+    // .experiense__item
+
+    &__item {
+        max-width: 1060px;
+        width: 100%;
+        margin-left: 190px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 67px 0px 60px 70px;
+    }
+
+    // .experiense__item-img
+
+    &__item-img {
+        max-width: 100px;
+        margin-right: 50px;
+    }
+
+    // .experiense__item-textbox
+
+    &__item-textbox {
+    }
+
+    // .experiense__item-title
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 200%;
+        color: #000000;
+        max-width: 486px;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    //experiense__item-text
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        color: #000000;
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+.experiense__bullet .swiper-pagination-bullet{
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    border: 2px solid #000;
+    opacity: 1;
+}
+.experiense__bullet .swiper-pagination-bullet-active{
+    background-color: #000;
+    border: 2px solid #000;
+}
+
 // learn
 
 .learn {
@@ -766,25 +846,25 @@
         line-height: 133%;
         color: #000000;
         position: relative;
+        transition: 0.4s ease-out;
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            content: "";
             transition: 0.4s ease-out;
-            &::after {
-                display: block;
-                position: absolute;
-                left: 0;
-                width: 0;
-                height: 2px;
-                background-color: #000;
-                content: "";
-                transition: 0.4s ease-out;
-            }
-            &:hover {
-                color: #000;
-                transition: 0.4s ease-out;
-            }
-            &:hover:after,
-            &:focus:after {
-                width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-            }
+        }
+        &:hover {
+            color: #000;
+            transition: 0.4s ease-out;
+        }
+        &:hover:after,
+        &:focus:after {
+            width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+        }
     }
 
     // .footer__social
@@ -798,12 +878,12 @@
 
     &__social-item {
         margin-left: 15px;
-        transition: .5s;
-        &:hover{
-            transition: .5s;
-            & path{
+        transition: 0.5s;
+        &:hover {
+            transition: 0.5s;
+            & path {
                 fill: #1877f2;
-                transition: .5s;
+                transition: 0.5s;
             }
         }
     }
